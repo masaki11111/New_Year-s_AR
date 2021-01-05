@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D Models - 03 - OBJ</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.0.2/dist/aframe-extras.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene embedded arjs>
+      <a-assets>
+        <a-asset-item
+          id="frog"
+          crossorigin="anonymous"
+          src="https://raw.githubusercontent.com/masaki11111/glitch_cow/main/Frog_01.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="cow2"
+          crossorigin="anonymous"
+          src="https://raw.githubusercontent.com/masaki11111/glitch_cow/main/cow2/model.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="bird"
+          crossorigin="anonymous"
+          src="https://raw.githubusercontent.com/masaki11111/glitch_cow/main/phoenix_bird/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="ultraman"
+          crossorigin="anonymous"
+          src="https://raw.githubusercontent.com/masaki11111/glitch_cow/main/ultraman_gaia/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="king"
+          crossorigin="anonymous"
+          src="https://raw.githubusercontent.com/masaki11111/glitch_cow/main/king.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="shrine2"
+          crossorigin="anonymous"
+          src="https://raw.githubusercontent.com/masaki11111/glitch_cow/main/model_gltf_cXyQGUwmlA5_9Vh9L52uUvX/model.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="shrine3"
+          crossorigin="anonymous"
+          src="https://raw.githubusercontent.com/masaki11111/glitch_cow/main/archive/model.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="shrine6"
+          crossorigin="anonymous"
+          src="https://raw.githubusercontent.com/masaki11111/glitch_cow/main/despenser_shrine/scene.gltf"
+        ></a-asset-item>
+      </a-assets>
+<!--       <a-marker present="hiro"> -->
+      <a-marker type="pattern" url="https://cdn.glitch.com/46e7693a-e848-4094-ba13-eab79fe41280%2Fpattern-HIRO2%20(1).patt?v=1609840674869">
+        <a-text
+          align="center"
+          position="0 0.1 0"
+          rotation="-90 0 0"
+          font="exo2bold"
+          value="HAPPY NEW YEAR"
+          color="red"
+          opacity="0.5"
+        ></a-text>
+        <a-text
+          align="center"
+          position="0 0.1 0.5"
+          rotation="-90 0 0"
+          font="exo2bold"
+          value="To Kei-chan,Shun-chan\nMata,asoboune"
+          color="red"
+          opacity="0.5"
+        ></a-text>
+        <a-plane
+          position="0 0 0"
+          rotation="-90 0 0"
+          width="3"
+          opacity="1"
+          height="4"
+          color="#7BC8A4"
+          shadow
+        >
+        </a-plane>
+        <a-gltf-model
+          position="-0.3 -1 0.4"
+          scale="1 1 1"
+          src="#cow2"
+          animation="property: object3D.rotation.y;
+             to: 8;
+             dir: alternate;
+             dur: 2000;
+             loop: true"
+        >
+        </a-gltf-model>
+        <a-gltf-model
+          position="0.5 0 1.7"
+          rotation="0 180 0"
+          scale="0.02 0.02 0.02"
+          src="#frog"
+        ></a-gltf-model>
+        <a-gltf-model
+          position="-0.5 0 1.7"
+          rotation="0 0 0"
+          scale="0.02 0.02 0.02"
+          src="#frog"
+        ></a-gltf-model>
+        <a-gltf-model
+          position="-1 2 0"
+          scale="0.001 0.001 0.001"
+          src="#bird"
+          animation="property: object3D.position.y;
+             to: 2.4;
+             dir: alternate;
+             dur: 1500;
+             loop: true"
+        ></a-gltf-model>
+        <a-gltf-model
+          position="1 0.6 -0.3"
+          rotation="-10 -45 0"
+          scale="0.6 0.6 0.6"
+          src="#ultraman"
+        ></a-gltf-model>
+        <a-gltf-model
+          position="-1 0.3 0"
+          rotation="-30 20 0"
+          scale="0.6 0.6 0.6"
+          src="#king"
+        ></a-gltf-model>
+        <a-gltf-model
+          position="0 0 1.5"
+          scale="0.2 0.2 0.2"
+          src="#shrine2"
+        ></a-gltf-model>
+        <a-gltf-model
+          position="1.3 -0.4 1.1"
+          scale="0.5 0.5 0.5"
+          src="#shrine3"
+        ></a-gltf-model>
+        <a-gltf-model
+          position="-1.1 -0.4 1.1"
+          scale="0.5 0.5 0.5"
+          src="#shrine3"
+        ></a-gltf-model>
+        <a-gltf-model
+          position="-1.1 -0.4 -1.2"
+          scale="0.5 0.5 0.5"
+          src="#shrine3"
+        ></a-gltf-model>
+        <a-gltf-model
+          position="1.3 -0.4 -1.2"
+          scale="0.5 0.5 0.5"
+          src="#shrine3"
+        ></a-gltf-model>
+        <a-gltf-model
+          position="0 0 -1.3"
+          rotation="0 270 0"
+          scale="0.1 0.1 0.2"
+          src="#shrine6"
+        ></a-gltf-model>
+      </a-marker>
+      <a-box position="0 0.5 0"></a-box>
+      <a-entity camera> </a-entity>
+    </a-scene>
+  </body>
+</html>
