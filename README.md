@@ -18,5 +18,7 @@ https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples
 今回時間がなかったのでできなかったのですが、日本語テキストを利用する場合は、別途ttfファイルを用意する必要があります。  
 https://qiita.com/emuyuu/items/df90a011d73643b8adcb
 
-##結果  
-こんな感じです。甥っ子の好きな蛙（狛犬の位置）、ウルトラマン、その敵？を適当に配置した感じです。
+## 結果  
+こんな感じです。甥っ子の好きな蛙（狛犬の位置）、ウルトラマン、その敵？を適当に配置した感じです。  
+(今回はこの３dモデルたちを探すのに一番苦労しました。ちなみに、蛙や牛のモデルはからお借りしたもので、このサイトはかわいい系が多くて助かりました。）
+<img src="https://user-images.githubusercontent.com/52119206/103643985-f345e700-4f98-11eb-8d8d-4ceeaaa36cef.jpg" width="320px">
